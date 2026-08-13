@@ -1,0 +1,97 @@
+.perfil {
+    max-width: 480px;
+    margin: var(--space-2xl) auto;
+    padding: 0 var(--space-xl) var(--space-2xl);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.perfil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-ligth));
+}
+
+.perfil h1 {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    color: var(--color-primary);
+    font-size: var(--text-xl);
+    text-align: center;
+}
+
+.perfil h1::before {
+    content: '👤';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-md);
+    background-color: var(--color-surface);
+    border: 4px solid var(--color-surface);
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    font-size: 2.2rem;
+}
+
+.perfil p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--text-base);
+    color: var(--color-text);
+    padding: var(--space-md) var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.perfil p strong {
+    color: var(--color-text-soft);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.perfil label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    font-weight: var(--weight-bold);
+    color: var(--color-text-soft);
+    font-size: var(--text-sm);
+}
+
+.perfil input {
+    padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.perfil input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(31, 78, 120, 0.12);
+}
+
+.perfil-acciones {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.perfil-acciones button {
+    flex: 1;
+}

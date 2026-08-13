@@ -1,0 +1,58 @@
+.pagina-checkout {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.acciones button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    background: #f3f4f6;
+    cursor: pointer;
+}
+
+.acciones button[type="submit"] {
+    background: #2563eb;
+    color: white;
+    border: none;
+}
+
+.volver-link {
+    margin-left: auto;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mensaje {
+    margin-top: 14px;
+    color: #111827;
+    font-weight: 500;
+}

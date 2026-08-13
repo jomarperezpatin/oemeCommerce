@@ -1,0 +1,57 @@
+.boton {
+    padding: var(--space-sm) var(--space-lg);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    font-weight: var(--weight-bold);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Variantes de color */
+.boton.primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.boton.primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.boton.secondary {
+    background-color: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.boton.danger {
+    background-color: var(--color-danger);
+    color: white;
+}
+
+/* Tamaños */
+.boton.pequeno {
+    padding: var(--space-xs) var(--space-sm);
+    /* font-size: 14px; → No existe variable exacta. Es entre --text-sm (0.9rem/14.4px) y --text-base (1rem/16px). 
+       Considera crear --text-xs: 0.875rem (14px) si lo necesitas reutilizar. */
+    font-size: var(--text-sm);
+}
+
+.boton.grande {
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--text-lg);
+}
+
+/* Estado disabled */
+.boton:disabled {
+    background-color: #999 !important;
+    /* → No existe variable para grises neutros. Considera agregar --color-disabled: #999 
+       si este es un color recurrente en tu sistema. */
+    color: white;
+    cursor: not-allowed;
+}
+
+.boton.activo {
+    background-color: var(--color-primary);
+    color: white;
+}

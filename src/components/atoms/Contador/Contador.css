@@ -1,0 +1,23 @@
+.contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #1F4E78;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 300px;
+  background-color: #f0f4fa;
+}
+ 
+.contador-valor {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1F4E78;
+  margin: 10px 0;
+}
+ 
+.contador-botones {
+  display: flex;
+  gap: 10px;
+}

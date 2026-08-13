@@ -1,0 +1,15 @@
+.precio-tag {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1F4E78;
+    margin: 10px 0;
+}
+
+.precio-tag.oferta {
+    color: #D32F2F;
+}
+
+.precio-tag.pequeno {
+    font-size: 16px;
+}

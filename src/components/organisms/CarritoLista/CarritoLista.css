@@ -1,0 +1,24 @@
+.carrito-lista,
+.carrito-lista-vacio {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  gap: 12px;
+}
+.carrito-controles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.carrito-total {
+  font-weight: bold;
+  text-align: right;
+  margin: 16px 0;
+}

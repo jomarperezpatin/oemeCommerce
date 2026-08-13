@@ -1,0 +1,104 @@
+.product-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del producto */
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Cuerpo de la tarjeta */
+.product-body {
+    padding: 16px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F4E78;
+    margin-bottom: 8px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    min-height: 40px;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F4E78;
+    margin: 10px 0;
+}
+
+/* Badge de stock */
+.product-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-badge.in-stock {
+    background-color: #D4EDDA;
+    color: #155724;
+}
+
+.product-badge.out-of-stock {
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+
+/* Botón de agregar al carrito */
+.product-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.product-button.enabled {
+    background-color: #1F4E78;
+    color: white;
+}
+
+.product-button.enabled:hover {
+    background-color: #163A5A;
+}
+
+.product-button.disabled {
+    background-color: #999;
+    color: white;
+    cursor: not-allowed;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-link:hover .product-name {
+    color: var(--color-primary);
+}

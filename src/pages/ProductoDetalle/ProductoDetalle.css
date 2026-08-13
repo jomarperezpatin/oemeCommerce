@@ -1,0 +1,90 @@
+.detalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* dos columnas iguales: imagen | info */
+  gap: var(--space-xl);
+  max-width: var(--ancho-contenido);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  align-items: start;   /* cada columna arranca arriba, sin estirarse */
+}
+ 
+.detalle-imagen {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;   /* llena su espacio sin deformarse */
+}
+ 
+.detalle-info {
+  display: flex;
+  flex-direction: column;    /* la info apilada verticalmente */
+  gap: var(--space-md);      /* separación pareja entre cada dato */
+  align-items: flex-start;   /* que el badge y el precio no se estiren */
+}
+ 
+.detalle-nombre {
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+}
+ 
+.detalle-descripcion {
+  font-size: var(--text-md);
+  color: var(--color-text-soft);
+}
+ 
+.detalle-mensaje {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  font-size: var(--text-lg);
+  color: var(--color-text-soft);
+}
+ 
+/* en pantallas chicas, una sola columna (imagen arriba, info abajo) */
+@media (max-width: 700px) {
+  .detalle {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detalle-volver {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: var(--weight-bold);
+  margin: var(--space-lg);
+}
+
+.detalle-otros {
+    grid-column: 1 / -1;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid #e2e8f0;
+    width: 100%;
+}
+
+.detalle-otros h2 {
+    font-size: var(--text-xl);
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+}
+
+.detalle-otros a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: transparent;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md, 8px);
+    font-size: var(--text-sm);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-primary);
+    margin-right: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.detalle-otros a:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.1));
+}

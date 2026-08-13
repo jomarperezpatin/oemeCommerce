@@ -1,0 +1,18 @@
+.disponibilidad-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.disponibilidad-badge.disponible {
+    background-color: #D4EDDA;
+    color: #155724;
+}
+ 
+.disponibilidad-badge.agotado {
+    background-color: #F8D7DA;
+    color: #721C24;
+}

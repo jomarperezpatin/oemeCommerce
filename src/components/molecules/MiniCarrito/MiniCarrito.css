@@ -1,0 +1,30 @@
+.mini-carrito {
+    border: 2px solid #1F4E78;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 500px;
+}
+.mini-carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    gap: 12px;
+}
+.mini-carrito-controles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mini-carrito-total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 12px;
+}
+.mini-carrito-vacio {
+  text-align: center;
+  color: #888;
+  margin: 16px;
+}

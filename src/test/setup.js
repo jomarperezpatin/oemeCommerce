@@ -1,0 +1,1 @@
+import '@testing-library/jest-dom' //Esto es para que podamos hacer un test de un componente y que nos diga si el componente está en el documento o no.
